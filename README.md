@@ -25,7 +25,9 @@ AO CONCLUIR A ETAPA 2 O CONTAINER DOCKER COM O JUPYTER-NOTEBOOK E PYSPARK ESTARÃ
     
     E VERIFIQUE O IP DO CONTAINER
 
-
+4 PASSO
+    EXTRAIR O CONTEUDO DO ARQUIVO [clicando aqui](https://download.inep.gov.br/microdados/microdados_enem_2020.zip)
+    DENTRO DA PASTA << /notebooks e verificar se o caminho esta igual ao informado no script
 
 # Teste de Eng. de Dados
 CritÃ©rios avaliadas:
