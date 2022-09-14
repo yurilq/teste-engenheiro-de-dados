@@ -1,0 +1,2 @@
+from mysql
+env MYSQL_ROOT_PASSWORD testemesha
