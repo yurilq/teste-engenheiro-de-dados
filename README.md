@@ -1,15 +1,44 @@
+1 PASSO
+    ABRA O TERMINAL NAVEGUE ATE A PASTA RAIZ DO PROJETO E EXECUTAR OS SEGUINTES COMANDOS
+    
+        docker run -d -v $(pwd)/app/db/data:/var/lib?mysql --rm --name mysql-container mysql-image
+        
+        docker exec -i mysql-container -uroot -ptestemesha < app/db/script01.sql
+        
+        docker exec -i mysql-container -uroot -ptestemesha < app/db/script02.sql
+        
+        docker exec -i mysql-container -uroot -ptestemesha < app/db/script_tb_notas.sql
+
+AO CONCLUIR A 1 ETAPA O CONTAINER DOCKER COM MY SQL ESTA RODANDO COM AS TABELAS CRIADAS
+
+2 PASSO
+    ABRA O TERMINAL NAVEGUE ATE A PASTA RAIZ DO PROJETO E EXECUTAR O SEGUINTE COMANDO
+    
+    docker run -it --rm -p 8888:8888 -v $(pwd)/notebooks:/home/jovyan/work jupyter/all-spark-notebook
+
+AO CONCLUIR A ETAPA 2 O CONTAINER DOCKER COM O JUPYTER-NOTEBOOK E PYSPARK ESTARÁ EM FUNCIONAMENTO
+
+3 PASSO
+    PARA CONSTATAR QUE O IP CONFIGURADO NO JUPYTER ESTA CORRETO EXECUTE O SEGUINTE COMANDO
+        
+    docker inspect mysql-container
+    
+    E VERIFIQUE O IP DO CONTAINER
+
+
+
 # Teste de Eng. de Dados
 Critérios avaliadas:
-- Docker;
-- SQL;
-- Python;
+- Docker; OK
+- SQL; OK 
+- Python; OK
 - Organização do Código
 - Documentação
 - ETL
 - Modelagem dos dados
 
 ### Desejáveis
-- PySpark
+- PySpark OK
 - Esquema Estrela
 
 
