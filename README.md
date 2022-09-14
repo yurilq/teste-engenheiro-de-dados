@@ -27,7 +27,7 @@ AO CONCLUIR A ETAPA 2 O CONTAINER DOCKER COM O JUPYTER-NOTEBOOK E PYSPARK ESTARÃ
 
 4 PASSO
     EXTRAIR O CONTEUDO DO ARQUIVO [clicando aqui](https://download.inep.gov.br/microdados/microdados_enem_2020.zip)
-    DENTRO DA PASTA << /notebooks E VERIFICAR SE O CAMINHO ESTA IGUAL AO INFORMADO NO SCRIPT
+    DENTRO DA PASTA "notebooks" E VERIFICAR SE O CAMINHO ESTA IGUAL AO INFORMADO NO SCRIPT
 
 # Teste de Eng. de Dados
 CritÃ©rios avaliadas:
